@@ -12,4 +12,17 @@ export default defineConfig({
       '@menu': path.resolve(__dirname, './src/packages/vue-menu'),
     },
   },
+  build: {
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vue-router': ['vue-router'],
+          'reka-ui': ['reka-ui'],
+          'lucide-vue': ['lucide-vue-next'],
+          'vendor': ['vue', 'tailwindcss'],
+        },
+      },
+    },
+  },
 })

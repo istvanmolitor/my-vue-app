@@ -1,20 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import DashboardView from '../views/DashboardView.vue'
-import UsersView from '../views/UsersView.vue'
-import OrdersView from '../views/OrdersView.vue'
-import AnalyticsView from '../views/AnalyticsView.vue'
-import ContentView from '../views/ContentView.vue'
-import SettingsView from '../views/SettingsView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', name: 'dashboard', component: DashboardView },
-    { path: '/users', name: 'users', component: UsersView },
-    { path: '/orders', name: 'orders', component: OrdersView },
-    { path: '/analytics', name: 'analytics', component: AnalyticsView },
-    { path: '/content', name: 'content', component: ContentView },
-    { path: '/settings', name: 'settings', component: SettingsView },
+    { path: '/', name: 'dashboard', component: () => import('../views/DashboardView.vue') },
+    { path: '/users', name: 'users', component: () => import('../views/UsersView.vue') },
+    { path: '/orders', name: 'orders', component: () => import('../views/OrdersView.vue') },
+    { path: '/analytics', name: 'analytics', component: () => import('../views/AnalyticsView.vue') },
+    { path: '/content', name: 'content', component: () => import('../views/ContentView.vue') },
+    { path: '/settings', name: 'settings', component: () => import('../views/SettingsView.vue') },
   ],
 })
 
