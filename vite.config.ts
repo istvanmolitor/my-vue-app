@@ -9,7 +9,7 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       '@admin': path.resolve(__dirname, './src/packages/vue-admin'),
-      '@menu': path.resolve(__dirname, './src/packages/vue-menu'),
+      '@menu': path.resolve(__dirname, './src/packages/ts-menu'),
     },
   },
   build: {
