@@ -16,8 +16,23 @@
       "@/*": [
         "./src/*"
       ],
+      "@admin": [
+        "./src/packages/vue-admin/index.ts"
+      ],
       "@admin/*": [
         "./src/packages/vue-admin/*"
+      ],
+      "@menu": [
+        "./src/packages/ts-menu/index.ts"
+      ],
+      "@menu/*": [
+        "./src/packages/ts-menu/*"
+      ],
+      "@user": [
+        "./src/packages/vue-user/index.ts"
+      ],
+      "@user/*": [
+        "./src/packages/vue-user/*"
       ]
     }
   },

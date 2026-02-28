@@ -10,6 +10,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '@admin': path.resolve(__dirname, './src/packages/vue-admin'),
       '@menu': path.resolve(__dirname, './src/packages/ts-menu'),
+      '@user': path.resolve(__dirname, './src/packages/vue-user'),
     },
   },
   build: {
