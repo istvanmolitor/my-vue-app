@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import AdminLayout from '@admin/components/layout/AdminLayout.vue'
 import DataCard from '@admin/components/ui/DataCard.vue'
+import Label from '@admin/components/ui/Label.vue'
 
 const profile = ref({
   name: 'John Doe',
@@ -41,14 +42,14 @@ const saveSettings = () => {
 
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <label class="block text-sm font-medium text-foreground mb-1.5">Teljes név</label>
+            <Label>Teljes név</Label>
             <input
               v-model="profile.name"
               class="h-9 w-full rounded-lg border border-border bg-background px-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
             />
           </div>
           <div>
-            <label class="block text-sm font-medium text-foreground mb-1.5">E-mail cím</label>
+            <Label>E-mail cím</Label>
             <input
               v-model="profile.email"
               type="email"
@@ -56,7 +57,7 @@ const saveSettings = () => {
             />
           </div>
           <div>
-            <label class="block text-sm font-medium text-foreground mb-1.5">Szerepkör</label>
+            <Label>Szerepkör</Label>
             <input
               v-model="profile.role"
               disabled
@@ -64,7 +65,7 @@ const saveSettings = () => {
             />
           </div>
           <div>
-            <label class="block text-sm font-medium text-foreground mb-1.5">Nyelv</label>
+            <Label>Nyelv</Label>
             <select
               v-model="profile.language"
               class="h-9 w-full appearance-none rounded-lg border border-border bg-background px-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring cursor-pointer"
@@ -107,16 +108,16 @@ const saveSettings = () => {
     <DataCard title="Biztonság" description="Jelszó és hitelesítési beállítások">
       <div class="space-y-4">
         <div>
-          <label class="block text-sm font-medium text-foreground mb-1.5">Jelenlegi jelszó</label>
+          <Label>Jelenlegi jelszó</Label>
           <input type="password" placeholder="••••••••" class="h-9 w-full rounded-lg border border-border bg-background px-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring" />
         </div>
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <label class="block text-sm font-medium text-foreground mb-1.5">Új jelszó</label>
+            <Label>Új jelszó</Label>
             <input type="password" placeholder="••••••••" class="h-9 w-full rounded-lg border border-border bg-background px-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring" />
           </div>
           <div>
-            <label class="block text-sm font-medium text-foreground mb-1.5">Jelszó megerősítése</label>
+            <Label>Jelszó megerősítése</Label>
             <input type="password" placeholder="••••••••" class="h-9 w-full rounded-lg border border-border bg-background px-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring" />
           </div>
         </div>

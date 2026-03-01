@@ -33,6 +33,12 @@
       ],
       "@user/*": [
         "./src/packages/vue-user/*"
+      ],
+      "@language": [
+        "./src/packages/vue-language/index.ts"
+      ],
+      "@language/*": [
+        "./src/packages/vue-language/*"
       ]
     }
   },
