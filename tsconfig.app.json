@@ -39,6 +39,12 @@
       ],
       "@language/*": [
         "./src/packages/vue-language/*"
+      ],
+      "@media": [
+        "./src/packages/vue-media/index.ts"
+      ],
+      "@media/*": [
+        "./src/packages/vue-media/*"
       ]
     }
   },

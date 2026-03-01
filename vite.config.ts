@@ -12,6 +12,7 @@ export default defineConfig({
       '@menu': path.resolve(__dirname, './src/packages/ts-menu'),
       '@user': path.resolve(__dirname, './src/packages/vue-user'),
       '@language': path.resolve(__dirname, './src/packages/vue-language'),
+      '@media': path.resolve(__dirname, './src/packages/vue-media'),
     },
   },
   build: {
