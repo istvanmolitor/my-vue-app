@@ -13,39 +13,19 @@
     "noUncheckedSideEffectImports": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@admin": [
-        "./src/packages/vue-admin/index.ts"
-      ],
-      "@admin/*": [
-        "./src/packages/vue-admin/*"
-      ],
-      "@menu": [
-        "./src/packages/ts-menu/index.ts"
-      ],
-      "@menu/*": [
-        "./src/packages/ts-menu/*"
-      ],
-      "@user": [
-        "./src/packages/vue-user/index.ts"
-      ],
-      "@user/*": [
-        "./src/packages/vue-user/*"
-      ],
-      "@language": [
-        "./src/packages/vue-language/index.ts"
-      ],
-      "@language/*": [
-        "./src/packages/vue-language/*"
-      ],
-      "@media": [
-        "./src/packages/vue-media/index.ts"
-      ],
-      "@media/*": [
-        "./src/packages/vue-media/*"
-      ]
+      "@/*": ["./src/*"],
+      "@admin": ["./src/packages/vue-admin/index.ts"],
+      "@admin/*": ["./src/packages/vue-admin/*"],
+      "@menu": ["./src/packages/ts-menu/index.ts"],
+      "@menu/*": ["./src/packages/ts-menu/*"],
+      "@user": ["./src/packages/vue-user/index.ts"],
+      "@user/*": ["./src/packages/vue-user/*"],
+      "@language": ["./src/packages/vue-language/index.ts"],
+      "@language/*": ["./src/packages/vue-language/*"],
+      "@media": ["./src/packages/vue-media/index.ts"],
+      "@media/*": ["./src/packages/vue-media/*"],
+      "@cms": ["./src/packages/vue-cms/index.ts"],
+      "@cms/*": ["./src/packages/vue-cms/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]

@@ -3,6 +3,7 @@ import userRoutes from '@user/router'
 import { authGuard } from '@user/router/guards'
 import languageRoutes from "@language/router";
 import { mediaRoutes } from "@media";
+import cmsRoutes from "@cms/router";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -11,6 +12,7 @@ const router = createRouter({
     ...userRoutes,
     ...languageRoutes,
     ...mediaRoutes,
+    ...cmsRoutes,
   ],
 })
 
