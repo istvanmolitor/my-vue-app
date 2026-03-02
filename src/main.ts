@@ -9,6 +9,7 @@ import { LanguageMenuBuilder } from "@/packages/vue-language";
 import { MediaMenuBuilder } from "@media";
 import { CmsMenuBuilder } from "@cms";
 import { RssWatcherMenuBuilder } from "@rss-watcher";
+import { themeMenuBuilder } from "@theme";
 
 menuRegistry.register(new AdminMenuBuilder())
 menuRegistry.register(new UserMenuBuilder())
@@ -16,5 +17,6 @@ menuRegistry.register(new LanguageMenuBuilder())
 menuRegistry.register(new MediaMenuBuilder())
 menuRegistry.register(new CmsMenuBuilder())
 menuRegistry.register(new RssWatcherMenuBuilder())
+menuRegistry.register(themeMenuBuilder)
 
 createApp(App).use(router).mount('#app')

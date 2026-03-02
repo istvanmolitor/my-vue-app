@@ -5,6 +5,7 @@ import languageRoutes from "@language/router";
 import { mediaRoutes } from "@media";
 import cmsRoutes from "@cms/router";
 import rssWatcherRoutes from "@rss-watcher/router";
+import { themeRoutes } from "@theme";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -15,6 +16,7 @@ const router = createRouter({
     ...mediaRoutes,
     ...cmsRoutes,
     ...rssWatcherRoutes,
+    ...themeRoutes,
   ],
 })
 
