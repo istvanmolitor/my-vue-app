@@ -17,6 +17,11 @@ export default defineConfig({
       '@rss-watcher': path.resolve(__dirname, './src/packages/vue-rss-watcher'),
     },
   },
+  server: {
+    port: 5174,
+    strictPort: true,
+    open: true
+  },
   build: {
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
