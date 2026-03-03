@@ -27,7 +27,9 @@
       "@cms": ["./src/packages/vue-cms/index.ts"],
       "@cms/*": ["./src/packages/vue-cms/*"],
       "@rss-watcher": ["./src/packages/vue-rss-watcher/index.ts"],
-      "@rss-watcher/*": ["./src/packages/vue-rss-watcher/*"]
+      "@rss-watcher/*": ["./src/packages/vue-rss-watcher/*"],
+      "@theme": ["./src/packages/vue-theme/index.ts"],
+      "@theme/*": ["./src/packages/vue-theme/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
